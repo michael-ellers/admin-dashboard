@@ -1,5 +1,9 @@
-import express from 'express';
+import express from "express";
+import { getAdmins, getUserPerformance } from "../controllers/management.js";
 
-const managementRoutes = express.Router();
+const router = express.Router();
 
-export default managementRoutes;
+router.get("/admins", getAdmins);
+router.get("/performance/:id", getUserPerformance);
+
+export default router;
