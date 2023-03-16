@@ -120,7 +120,7 @@ const BreakdownChart = ({ isDashboard = false }) => {
         position="absolute"
         top="50%"
         left="50%"
-        color={theme.palette.secondary[400]}
+        color={theme.palette.secondary[100]}
         textAlign="center"
         pointerEvents="none"
         sx={{

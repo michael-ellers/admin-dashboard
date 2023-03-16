@@ -86,27 +86,26 @@ export const tokensLight = reverseTokens(tokensDark);
                 },
             }
             : {
-                
                 // palette values for light mode
                 primary: {
-                    ...tokensLight.primary,
-                    main: tokensDark.grey[50],
-                    light: tokensDark.grey[100],
+                  ...tokensLight.primary,
+                  main: tokensDark.grey[100],
+                  light: tokensDark.grey[50],
                 },
                 secondary: {
-                    ...tokensLight.secondary,
-                    main: tokensDark.secondary[600],
-                    light: tokensDark.secondary[700],
+                  ...tokensLight.secondary,
+                  main: tokensDark.secondary[600],
+                  light: tokensDark.secondary[700],
                 },
                 neutral: {
-                    ...tokensLight.grey,
-                    main: tokensDark.grey[500],
+                  ...tokensLight.grey,
+                  main: tokensDark.grey[500],
                 },
                 background: {
-                    default: tokensDark.grey[0],
-                    alt: tokensDark.grey[50],
+                  default: tokensDark.grey[0],
+                  alt: tokensDark.grey[50],
                 },
-            }),
+              }),
         },
         typography: {
             fontFamily: ["Inter", "sans-serif"].join(","),
